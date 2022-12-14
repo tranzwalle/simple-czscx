@@ -12,17 +12,15 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'simple-czsc'
-DESCRIPTION = '缠论量化工具集'
-URL = 'https://github.com/simple-trade/simple-czsc'
-EMAIL = 'simple_czsc@163.com'
-AUTHOR = 'simple-trade'
-REQUIRES_PYTHON = '>=3.6.0'
+NAME = 'simple-czscx'
+DESCRIPTION = '缠论量化工具,基于https://github.com/simple-trade/simple-czsc二次开发'
+URL = 'https://github.com/tranzwalle/simple-czscx'
+REQUIRES_PYTHON = '>=3.9.0'
 VERSION = '0.1.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'numpy', 'pandas', 'pyecharts', 'requests', 'selenium', 'snapshot_selenium', 'TA_Lib'
+    'numpy', 'pandas', 'pyecharts', 'requests', 'selenium', 'snapshot_selenium', 'TA_Lib', 'MyTT'
 ]
 
 # What packages are optional?
@@ -99,8 +97,6 @@ setup(
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author=AUTHOR,
-    author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
@@ -120,8 +116,8 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
